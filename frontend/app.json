@@ -1,0 +1,71 @@
+{
+  "pages": [
+    "tommie_duanshiping/pages/index/index",
+    "tommie_duanshiping/pages/member/index",
+    "tommie_duanshiping/pages/play/index",
+    "tommie_duanshiping/pages/video/index",
+    "tommie_duanshiping/pages/favorite/index",
+    "tommie_duanshiping/pages/help/index",
+    "tommie_duanshiping/pages/tuijian/index",
+    "tommie_duanshiping/pages/shibai/index",
+    "tommie_duanshiping/pages/md5s/index",
+    "tommie_duanshiping/pages/pay/index",
+    "tommie_duanshiping/pages/keypay/keypay",
+    "tommie_duanshiping/pages/wechatMas2/pages/index/index",
+    "tommie_duanshiping/pages/web/index",
+    "tommie_duanshiping/pages/invite/index",
+    "tommie_duanshiping/pages/md5/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#FD6B30",
+    "backgroundColor": "#f8f8f9"
+  },
+  "tabBar": {
+    "custom": false,
+    "color": "#434343",
+    "selectedColor": "#ffc600",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "tommie_duanshiping/pages/index/index",
+        "text": "首页",
+        "iconPath": "tommie_duanshiping/resource/image/index.png",
+        "selectedIconPath": "tommie_duanshiping/resource/image/indexs.png"
+      },
+      {
+        "pagePath": "tommie_duanshiping/pages/video/index",
+        "text": "推荐",
+        "iconPath": "tommie_duanshiping/resource/image/new.png",
+        "selectedIconPath": "tommie_duanshiping/resource/image/news.png"
+      },
+      {
+      "pagePath": "tommie_duanshiping/pages/wechatMas2/pages/index/index",
+      "text": "分享",
+      "iconPath": "tommie_duanshiping/resource/image/hot.png",
+      "selectedIconPath": "tommie_duanshiping/resource/image/hots.png"
+       },
+      {
+        "pagePath": "tommie_duanshiping/pages/md5/index",
+        "text": "MD5",
+        "iconPath": "tommie_duanshiping/resource/image/md5.png",
+        "selectedIconPath": "tommie_duanshiping/resource/image/md5s.png"
+      },
+      {
+        "pagePath": "tommie_duanshiping/pages/member/index",
+        "text": "我的",
+        "iconPath": "tommie_duanshiping/resource/image/my.png",
+        "selectedIconPath": "tommie_duanshiping/resource/image/mys.png"
+      }
+    ]
+  },
+  "navigateToMiniProgramAppIdList": [
+    "wxdae934b6519234d2",
+    "wxefa6b6f85904afe1",
+    "wx1e97d69d9d82848b",
+    "wxe6037180c0e0d4a4"
+  ],
+  "sitemapLocation": "sitemap.json"
+}

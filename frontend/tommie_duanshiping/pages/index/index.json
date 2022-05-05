@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "i-notice-bar": "../../../dist/notice-bar/index",
+        "i-button": "../../../dist/button/index",
+        "i-icon": "../../../dist/icon/index"
+    }
+}

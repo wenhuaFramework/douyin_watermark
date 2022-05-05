@@ -1,0 +1,76 @@
+<view bindtap="copy" class="zhifubao" wx:if="{{copyText}}">
+    <image src="{{url}}{{adImg}}"></image>
+</view>
+<view class="container">
+    <i-notice-bar loop icon="systemprompt" speed="1000" wx:if="{{description}}">
+        {{description}}
+</i-notice-bar>
+    <view bindtap="tipKeFuMsg" class="gonggao"></view>
+    <view bindtap="copy" class="zhifubao" wx:if="{{copyText}}">
+        <view class="wenzi">
+            <text class="left">{{adText}}</text>
+        </view>
+    </view>
+    <view>
+        <button class="bf_input_down" formType="submit" openType="share"></button>
+    </view>
+    <image bindtap="goTop" class="xuanfu1" hidden="{{!floorstatus}}" src="/images/top.png"></image>
+    <view class="xuanfu2" hidden="{{!floorstatus}}">
+        <navigator bindtap="help">帮助</navigator>
+    </view>
+    <view class="xuanfu3" hidden="{{!floorstatus}}">
+        <navigator url="/tommie_duanshiping/pages/keypay/keypay">兑换</navigator>
+    </view>
+    <button class="xuanfu4" hidden="{{!floorstatus}}" openType="contact" sessionFrom="weapp">
+        <image class="xuanfu4" src="/images/kf.png"></image>
+    </button>
+    <view class="inputmain">
+        <view class="weui-cells weui-cells_after-title" style="width:520rpx;">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__bd" style="height: 86rpx;">
+                    <input bindconfirm="recommend" bindinput="invalue" class="weui-input" confirmType="search" name="url" placeholder="此处粘贴分享链接" value="{{inputvalue}}"></input>
+                </view>
+                <view class="weui-cell__ft" wx:if="{{inputvalue}}">
+                    <icon bindtap="clear" color="#E64340" size="23" type="clear"></icon>
+                </view>
+            </view>
+        </view>
+        <view class="jiexibut" wx:if="{{loginState=='0'}}">
+            <button bindgetuserinfo="updateUserInfo" class="login-button" openType="getUserInfo">登录</button>
+        </view>
+        <view bindtap="query" bindtouchend="end" bindtouchstart="start" class="jiexibut" wx:else>解析</view>
+    </view>
+    <view wx:if="{{playurl}}">
+        <view class="videos">
+            <video id="myVideo" src="{{playurl}}"></video>
+        </view>
+        <view class="button">
+            <i-button bind:click="handleClick" bindtap="downloads" type="error">
+                <i-icon size="28" type="mobilephone_fill"></i-icon>下载作品</i-button>
+            <i-button bind:click="handleClick" bindtap="copydownurl" type="primary">
+                <i-icon size="28" type="accessory"></i-icon>复制链接</i-button>
+        </view>
+    </view>
+    <view class="banners">
+
+
+ 
+        <image bindtap="help" class="banner" src="/images/zuoyi.png"></image>
+        <image bindtap="cishu" class="banner" src="/images/youyi.png"></image>
+        <image bindtap="shibai" class="banner" src="/images/zuoer.png"></image>
+        <image bindtap="user" class="banner" src="/images/youer.png"></image>
+    </view>
+    <view>
+        <button class="jiaocheng" formType="submit"></button>
+    </view>
+    <view class="ad" wx:if="{{adId.length>0}}">
+        <ad unitId="{{adId}}"></ad>
+    </view>
+    <view class="weui-footer">
+        <view class="weui-footer__text">作品归平台及作者所有，本应用不储存任何作品及图片。</view>
+    </view>
+</view>
+
+
+
+ 
